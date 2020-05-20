@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .Header {
     display: flex;
@@ -7,7 +6,7 @@
     flex-direction: column;
     width: 100%;
     background-color: #222f3e;
-    font-family: 'Roboto', sans-serif;
+    
 }
 
 .Header h1 {

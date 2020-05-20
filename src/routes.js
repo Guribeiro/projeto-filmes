@@ -9,6 +9,7 @@ import Sobre from './pages/Sobre';
 import Undefined from './pages/Undefined';
 
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 export default function Routes() {
@@ -23,6 +24,7 @@ export default function Routes() {
                 <Route exact path='/sobre' component={Sobre} />
                 <Route path='*' component={Undefined} />
             </Switch>
+            <Footer/>
         </BrowserRouter>
     );
 }
