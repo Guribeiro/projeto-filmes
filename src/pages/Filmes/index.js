@@ -1,53 +1,45 @@
 import React, { Component } from 'react';
 
-import {Link} from 'react-router-dom';
-
 import './style.css';
 
-
 class Filmes extends Component {
-    constructor(props) {
+   
+    constructor(props){
         super(props)
+
         this.state = {
-            filmes: []
+            filme: [],
+            teste: ''
         }
-
-        this.loadFilmes = this.loadFilmes.bind(this);
+        this.loadFilme = this.loadFilme.bind(this);
     }
 
-
-    componentDidMount() {
-
-        this.loadFilmes();
-
+    componentDidMount(){
+        this.loadFilme();
     }
-
-    loadFilmes() {
-        const url = 'https://sujeitoprogramador.com/r-api/?api=filmes';
+    
+    loadFilme(){
+        const {id} = this.props.match.params
+        
+        const url = `https://sujeitoprogramador.com/r-api/?api=filmes/${id}`;
 
         fetch(url)
-            .then((response) => (response.json()))
-            .then((json) => {
-                this.setState({ filmes: json });
-            })
+        .then((response) => response.json())
+        .then((json) => {
+            this.setState({filme: json})
+            console.log(json)
+        })
+
+        
     }
 
     render() {
         return (
-            <div className='container-main'>
-                <section className='section-movies'>
-                    <h2>Campeões de Bilheteria</h2>
-                    {this.state.filmes.map((filme) => {
-                        return (
-                            <article key={filme.id} className='article-movie'>
-                                <strong>{filme.nome}</strong>
-                                <img src={filme.foto} alt="capa" />
-                                <Link>Acessar</Link>
-                                <p>{filme.sinopse}</p>
-                            </article>
-                        );
-                    })}
-                </section>
+            <div>
+                <h1>{this.state.filme.nome}</h1>
+                <figure>
+                    <img src={this.state.filme.foto} alt=""/>
+                </figure>
             </div>
         );
     }

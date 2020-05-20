@@ -36,7 +36,7 @@ class Footer extends Component {
                             
                             <ul>
                                 <li>
-                                    <a href="/">API utilizada nesse projeto</a>
+                                    <a href="https://sujeitoprogramador.com/r-api/?api=filmes">API utilizada nesse projeto</a>
                                 </li>
                                 <li>
                                     <a href="https://sujeitoprogramador.com">sujeitoprogramador.com</a>
@@ -53,19 +53,19 @@ class Footer extends Component {
                 </div>
                 <div className="social-links">
                     <nav>
-                        <a href="/">
+                        <a href="https://twitter.com/Guribeir">
                             <FiTwitter color='white' size='22' />
                         </a>
-                        <a href="/">
+                        <a href="https://www.instagram.com/gustavhrd/?hl=pt-br">
                             <FiInstagram color='white' size='22' />
                         </a>
-                        <a href="/">
+                        <a href="https://github.com/Guribeiro">
                             <FiGithub color='white' size='22' />
                         </a>
-                        <a href="/">
+                        <a href="https://www.linkedin.com/in/gustavo-henrique-ribeiro-b58385184/">
                             <FiLinkedin color='white' size='22' />
                         </a>
-                        <a href="/">
+                        <a href="https://www.facebook.com/gustavo.ribeiro.58173">
                             <FiFacebook color='white' size='22' />
                         </a>
                     </nav>

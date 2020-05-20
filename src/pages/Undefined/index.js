@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 
+import './style.css';
+
+import notFoundImg from '../../assets/not-found.jpg';
+
+
 class Undefined extends Component {
     
 
     render() {
         return (
-            <div>
-                <h1>Undefined page</h1>
-            </div>
+            <figure className='main'>
+                <img src={notFoundImg} alt=""/>
+            </figure>
         );
     }
 }

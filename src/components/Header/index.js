@@ -13,7 +13,6 @@ class Header extends Component{
         <h1>Projeto Filmaria</h1>
         <nav className='nav-bar'>
             <Link to='/'>Início</Link>
-            <Link to='/filmes'>Filmes</Link>
             <Link to='/contato'>Contato</Link>
             <Link to='/sobre'>Sobre</Link>
         </nav>
